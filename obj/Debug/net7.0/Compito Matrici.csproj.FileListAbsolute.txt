@@ -1,0 +1,15 @@
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\bin\Debug\net7.0\Compito Matrici.exe
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\bin\Debug\net7.0\Compito Matrici.deps.json
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\bin\Debug\net7.0\Compito Matrici.runtimeconfig.json
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\bin\Debug\net7.0\Compito Matrici.dll
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\bin\Debug\net7.0\Compito Matrici.pdb
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\obj\Debug\net7.0\Compito Matrici.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\obj\Debug\net7.0\Compito Matrici.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\obj\Debug\net7.0\Compito Matrici.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\obj\Debug\net7.0\Compito Matrici.AssemblyInfo.cs
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\obj\Debug\net7.0\Compito Matrici.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\obj\Debug\net7.0\Compito Matrici.dll
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\obj\Debug\net7.0\refint\Compito Matrici.dll
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\obj\Debug\net7.0\Compito Matrici.pdb
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\obj\Debug\net7.0\Compito Matrici.genruntimeconfig.cache
+C:\Users\HP\Documents\Informatica\C#\Compito Matrici\obj\Debug\net7.0\ref\Compito Matrici.dll
