@@ -11,6 +11,7 @@ colonna = Convert.ToInt32(Console.ReadLine());
 
 int[,] matrice = new int[riga, colonna];
 
+//Popolazione della matrice
 for(int i = 0; i < riga; i++)
 {
     for(int n = 0; n < riga; n++)
@@ -20,6 +21,7 @@ for(int i = 0; i < riga; i++)
     }
 }
 
+//Richiamo dei metodi
 StampaMatrice(matrice);
 Console.WriteLine("\n");
 MatriceTrasposta(matrice);
