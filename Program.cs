@@ -33,6 +33,13 @@ Console.WriteLine("\n");
 MatriceTrasposta(matrice);
 Console.WriteLine("\n");
 Console.WriteLine($"Il valore del determinante della matrice è {Determinante(matrice)}");
+if(Determinante(matrice)!=0)
+{
+    Console.WriteLine("Il rango ha valore 3");
+}else
+{
+    Rango(matrice);
+}
 
 //Metodi
 static void MatriceTrasposta(int[,] matrice)
@@ -66,10 +73,52 @@ static int Determinante(int[,] matrice)
 {
     if(matrice.GetLength(0) == 3)
     {
-        return matrice[0,0]*matrice[1,1]*matrice[2,2]+matrice[0,1]*matrice[1,1]*matrice[0,2]+matrice[0,2]*matrice[1,0]*matrice[2,1]-matrice[0,0]*matrice[1,2]*matrice[2,0]-matrice[0,1]*matrice[1,0]*matrice[2,2]-matrice[2,0]*matrice[1,1]*matrice[2,0];
+        return matrice[0,0]*matrice[1,1]*matrice[2,2]+matrice[0,1]*matrice[1,2]*matrice[2,0]+matrice[0,2]*matrice[1,0]*matrice[2,1]-matrice[0,0]*matrice[1,2]*matrice[2,1]-matrice[0,1]*matrice[1,0]*matrice[2,2]-matrice[2,0]*matrice[1,1]*matrice[0,2];
     }else
     {
         return matrice[0,0]*matrice[1,1]-matrice[0,1]*matrice[1,0];
     }
     
 }
+
+static void Rango(int[,] matrix)
+{
+    int primoDet = matrix[0,0]*matrix[1,1]-matrix[0,1]*matrix[1,0];
+    int secondoDet = matrix[0,1]*matrix[1,2]-matrix[0,2]*matrix[1,1];
+    int terzoDet = matrix[1,0]*matrix[2,1]-matrix[1,1]*matrix[2,0];
+    int quartoDet = matrix[1,1]*matrix[2,2]-matrix[1,2]*matrix[2,1];
+    if( primoDet != 0 || secondoDet != 0 || terzoDet != 0 || quartoDet != 0)
+    {
+        Console.WriteLine("Il rango ha valore 2");
+    }else
+    {
+        int cont = 0;
+        bool verifica = false;
+        for(int i = 0; i < matrix.GetLength(0); i++)
+        {
+            for(int n = 0; n < matrix.GetLength(1); n++)
+            {
+                if(matrix[i,n] != 0)
+                {
+                    Console.WriteLine("Il rango ha valore 1");
+                    verifica = true;
+                    break;
+                }else
+                {
+                    cont++;
+                }
+
+            }
+
+            if(verifica)
+            {
+                break;
+            }
+        }
+        if(cont == 9)
+        {
+            Console.WriteLine("Il rango ha valore 0");
+        }
+    }
+}
+
