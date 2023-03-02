@@ -87,7 +87,11 @@ static void Rango(int[,] matrix)
     int secondoDet = matrix[0,1]*matrix[1,2]-matrix[0,2]*matrix[1,1];
     int terzoDet = matrix[1,0]*matrix[2,1]-matrix[1,1]*matrix[2,0];
     int quartoDet = matrix[1,1]*matrix[2,2]-matrix[1,2]*matrix[2,1];
-    if( primoDet != 0 || secondoDet != 0 || terzoDet != 0 || quartoDet != 0)
+
+    if(Determinante(matrix)!=0 && matrix.GetLength(0) == 2)
+    {
+        Console.WriteLine("Il rango ha valore 2");
+    }else if( primoDet != 0 || secondoDet != 0 || terzoDet != 0 || quartoDet != 0)
     {
         Console.WriteLine("Il rango ha valore 2");
     }else
