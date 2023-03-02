@@ -33,6 +33,8 @@ Console.WriteLine("\n");
 MatriceTrasposta(matrice);
 Console.WriteLine("\n");
 Console.WriteLine($"Il valore del determinante della matrice è {Determinante(matrice)}");
+
+//Rango matrice 3x3
 if(Determinante(matrice)!=0)
 {
     Console.WriteLine("Il rango ha valore 3");
